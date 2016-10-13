@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  match '/help', to: 'static_pages#help', via: 'get'
+
+  get 'users/new'
+
   root 'static_pages#home'
 
   # get 'static_pages/home'
