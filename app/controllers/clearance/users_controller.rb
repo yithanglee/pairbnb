@@ -10,7 +10,6 @@ class Clearance::UsersController < Clearance::BaseController
   end
 
   def new
-    
     @user = user_from_params
     render template: "users/new"
   end
